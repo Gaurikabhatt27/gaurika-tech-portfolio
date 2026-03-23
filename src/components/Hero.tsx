@@ -9,19 +9,33 @@ export default function Hero() {
   const fullText = "Gaurika Bhatt";
 
   useEffect(() => {
-    let i = 0;
-    const timeout = setTimeout(() => {
-      const typingInterval = setInterval(() => {
+    let typingInterval: NodeJS.Timeout;
+    let loopTimeout: NodeJS.Timeout;
+
+    const startTyping = () => {
+      let i = 0;
+      setText("");
+      typingInterval = setInterval(() => {
         setText(fullText.slice(0, i + 1));
         i++;
         if (i >= fullText.length) {
           clearInterval(typingInterval);
+          loopTimeout = setTimeout(() => {
+            startTyping();
+          }, 10000);
         }
       }, 150);
-      return () => clearInterval(typingInterval);
+    };
+
+    const initialDelay = setTimeout(() => {
+      startTyping();
     }, 500);
 
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(initialDelay);
+      clearInterval(typingInterval);
+      clearTimeout(loopTimeout);
+    };
   }, []);
 
   const containerVariants: Variants = {
@@ -43,13 +57,11 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden max-w-7xl mx-auto">
 
-      {/* Background glow orbs specific to Hero */}
       <div className="glow top-20 left-10 md:left-40"></div>
       <div className="glow-blue bottom-20 right-10 md:right-40"></div>
 
       <div className="w-full grid md:grid-cols-2 gap-12 items-center z-10 pt-20">
 
-        {/* Left Column: Text Content */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -96,14 +108,13 @@ export default function Hero() {
             </a>
 
             <a
-              href="/resume.pdf"
-              download
+              href="#contact"
               className="group relative px-8 py-3 rounded-full font-semibold tracking-wide overflow-hidden glass-card hover:bg-white/10 transition-colors"
             >
               <span className="relative z-10 text-white flex items-center gap-2">
-                Download Resume
-                <svg className="w-4 h-4 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                Get in Touch
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
