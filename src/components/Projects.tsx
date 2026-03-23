@@ -22,7 +22,7 @@ const projectsData = [
             "Added data-rich analytics and visual user insights using Recharts"
         ],
         tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "Gemini API", "JWT", "Recharts"],
-        links: { demo: "#", githubFrontend: "https://github.com/Gaurikabhatt27/EchoChamber-frontend.git", githubBackend: "https://github.com/Gaurikabhatt27/EchoChamber-backend.git" },
+        links: { demo: "https://echo-chamber-frontend.vercel.app", githubFrontend: "https://github.com/Gaurikabhatt27/EchoChamber-frontend.git", githubBackend: "https://github.com/Gaurikabhatt27/EchoChamber-backend.git" },
         styles: {
             titleGradient: "from-purple-400 via-pink-400 to-blue-400",
             hoverText: "group-hover:text-purple-300",

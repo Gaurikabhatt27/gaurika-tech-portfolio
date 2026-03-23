@@ -53,10 +53,11 @@ export default function Education() {
                                     CGPA: <span className="text-purple-300 font-bold">8.74</span>
                                 </div>
                             </div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-300">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-300">
                                 Lovely Professional University
                             </h3>
-                            <p className="text-lg text-slate-400 font-medium">B.Tech Computer Science Engineering</p>
+                            <p className="text-sm text-purple-300/80 mb-2">Punjab, India</p>
+                            <p className="text-lg text-slate-400 font-medium">Bachelor of Technology - Computer Science and Engineering</p>
                         </SpotlightCard>
                     </motion.div>
 
@@ -66,16 +67,17 @@ export default function Education() {
                         <SpotlightCard className="glass-card p-6 md:p-8 rounded-2xl group border border-white/5 hover:border-blue-500/30 transition-colors" spotlightColor="rgba(59, 130, 246, 0.15)">
                             <div className="flex justify-between items-start flex-wrap gap-4 mb-2">
                                 <span className="text-blue-400 font-semibold text-xs tracking-[0.2em] uppercase bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
-                                    2022 – 2023
+                                    April 2022 - March 2023
                                 </span>
                                 <div className="inline-block px-3 py-1 rounded-md bg-white/5 border border-white/10 text-white font-mono text-sm shadow-inner">
-                                    Score: <span className="text-blue-300 font-bold">73%</span>
+                                    Percentage: <span className="text-blue-300 font-bold">73%</span>
                                 </div>
                             </div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-300 group-hover:to-cyan-300 transition-all duration-300">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-300 group-hover:to-cyan-300 transition-all duration-300">
                                 Greenfields Public School
                             </h3>
-                            <p className="text-lg text-slate-400 font-medium">Intermediate</p>
+                            <p className="text-sm text-blue-300/80 mb-2">Delhi, India</p>
+                            <p className="text-lg text-slate-400 font-medium">Intermediate (12th class)</p>
                         </SpotlightCard>
                     </motion.div>
 
@@ -85,16 +87,17 @@ export default function Education() {
                         <SpotlightCard className="glass-card p-6 md:p-8 rounded-2xl group border border-white/5 hover:border-indigo-500/30 transition-colors" spotlightColor="rgba(99, 102, 241, 0.15)">
                             <div className="flex justify-between items-start flex-wrap gap-4 mb-2">
                                 <span className="text-indigo-400 font-semibold text-xs tracking-[0.2em] uppercase bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
-                                    2020 – 2021
+                                    April 2020 - March 2021
                                 </span>
                                 <div className="inline-block px-3 py-1 rounded-md bg-white/5 border border-white/10 text-white font-mono text-sm shadow-inner">
-                                    Score: <span className="text-indigo-300 font-bold">92%</span>
+                                    Percentage: <span className="text-indigo-300 font-bold">92%</span>
                                 </div>
                             </div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 transition-all duration-300">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 transition-all duration-300">
                                 Greenfields Public School
                             </h3>
-                            <p className="text-lg text-slate-400 font-medium">Matriculation</p>
+                            <p className="text-sm text-indigo-300/80 mb-2">Delhi, India</p>
+                            <p className="text-lg text-slate-400 font-medium">Matriculation (10th class)</p>
                         </SpotlightCard>
                     </motion.div>
 
