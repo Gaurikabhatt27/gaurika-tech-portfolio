@@ -8,8 +8,8 @@ const resumeData = [
         title: "General CV",
         subtitle: "Professional Resume",
         description: "A comprehensive overview of my skills, experience, and projects across various domains, showcasing my technical abilities and growth.",
-        viewLink: "/resume-general.pdf",
-        downloadLink: "/resume-general.pdf",
+        viewLink: "/general_cv.pdf",
+        downloadLink: "/general_cv.pdf",
         gradient: "from-blue-500 to-cyan-400",
         shadowHover: "group-hover:shadow-[0_0_30px_rgba(56,189,248,0.2)]",
         borderHover: "group-hover:border-blue-500/50"
@@ -19,8 +19,8 @@ const resumeData = [
         title: "Data Science & AI/ML CV",
         subtitle: "Domain-Centric Resume",
         description: "A heavily tailored breakdown focusing exclusively on my advanced machine learning models, generative AI analytics, and deep data science capabilities.",
-        viewLink: "/resume-specialized.pdf",
-        downloadLink: "/resume-specialized.pdf",
+        viewLink: "/specialized_cv.pdf",
+        downloadLink: "/specialized_cv.pdf",
         gradient: "from-purple-500 to-pink-500",
         shadowHover: "group-hover:shadow-[0_0_30px_rgba(216,180,254,0.2)]",
         borderHover: "group-hover:border-purple-500/50"
